@@ -1,0 +1,119 @@
+.box{
+    width:  300px;
+    height:  200px;
+    background-color: #333;
+    transition: opacity .5s;
+    margin-bottom: 20px;
+ }
+  
+ .box.fade-out{
+    opacity: 0;
+ }
+
+
+
+ .box2{
+    width:  300px;
+    height:  200px;
+    background-color: #333;
+    transition: 0.5s;
+    margin-bottom: 20px;
+ }
+
+ .moveRight {
+    margin-left: 300px;
+ }
+
+ 
+ .box3{
+    width:  300px;
+    height:  200px;
+    background-color: #333;
+    transition: 0.5s;
+    margin-bottom: 20px;
+ }
+
+ .spin  {
+ animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: 10;
+  animation-timing-function: linear; 
+}  
+
+@keyframes spin {
+        from {
+            transform:rotate(0deg);
+        }
+        to {
+            transform:rotate(360deg);
+        }
+    }
+
+.box4   {
+    width:  300px;
+    height:  200px;
+    background-color: #333;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.colourChange {
+    animation-name: colourChange;
+    animation-duration: 5000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear; 
+  }
+  
+  @keyframes colourChange {
+    0% {background-color: blue;}
+    10% {background-color: white;}
+    20% {background-color: black;}
+    30% {background-color: red;}
+    40% {background-color: orange;}
+    50% {background-color: green;}
+    60% {background-color: yellowgreen;}
+    70% {background-color: yellow;}
+    80% {background-color: crimson;}
+    90% {background-color: forestgreen;}
+    100% {background-color: blue;}
+
+  }
+
+.box5   {
+    width:  300px;
+    height:  200px;
+    background-color: #333;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.grow   {
+    animation-name: grow;
+    animation-duration: 5000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear; 
+}
+
+@keyframes grow {
+    0% {width: 300px; height: 200px;}
+    50% {width: 600px; height: 400px;}
+    100% {width: 300px; height: 200px;}
+}
+
+.box6   {
+    background-color: #333;
+    transition: 5s;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.appear-row {
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  .appeared {
+    opacity: 1;
+    transform: translateY(0);
+  }

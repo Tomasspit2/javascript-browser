@@ -13,7 +13,7 @@ Ce projet propose six exercices pour vous aider à comprendre l'utilisation de X
 
 1. Créez une fonction JavaScript nommée `sendGetRequest` qui envoie une requête GET à une URL donnée.
 2. Utilisez `console.log` pour afficher la réponse de la requête dans la console.
-
+E
 #### Exercice 3 : Gérer les États de Requête
 **Objectif :** Utilisez les événements pour gérer les états de la requête XHR.
 

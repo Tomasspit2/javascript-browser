@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="js/style.css" />
     <title>Form Manipulation</title>
-</head>
-<body>
+  </head>
+
+  <body><!-- 
+    <form
+      method=""
+      id="exo3form"
+      class="container"
+      onsubmit="return validateForm()"
+      action="#"
+      autocomplete="off"
+    >
+      <label for="name">Name</label>
+      <input id="name" type="text" />
+
+      <label for="email">Email</label>
+      <input id="email" type="email" />
+
+      <label for="checkbox">Veuillez cocher svp</label>
+      <input id="checkbox" type="checkbox" />
+
+      <label for="choix">Choisissez une option :</label>
+      <select id="choix" name="choix" onchange="textChangeSelect()">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+      </select>
+
+      <p class="textToReplace">Texte à remplacer</p>
+
+      <input type="text" id="autocomplete" placeholder="Select a color..."></input>
+      <ul id="results"></ul>
+
+      <button id="submit" type="submit" value="submit">Submit</button>
+    </form>
+
+    <form action="#" id="formAddRemove">
+      <button id="delete" onclick="deleteTextField()">Delete</button>
+      <button id="add" onclick="addTextField()">Add</button>
+    </form>
+ -->
+    <div id="steps">
+      <div class="step active" id="step1">
+        <h2>Étape 1: Informations de base</h2>
+        <label for="name">Nom:</label>
+        <input type="text" id="name"><br><br>
+        <button onclick="nextStep()">Suivant</button>
+      </div>
+    
+      <div class="step" id="step2">
+        <h2>Étape 2: Informations supplémentaires</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br><br>
+        <button onclick="prevStep()">Précédent</button>
+        <button onclick="nextStep()">Suivant</button>
+      </div>
+    
+      <div class="step" id="step3">
+        <h2>Étape 3: Récapitulatif</h2>
+        <div id="summary"></div>
+        <button onclick="prevStep()">Précédent</button>
+        <button onclick="submitForm()">Soumettre</button>
+      </div>
+    </div>
+    
     <!-- Your code goes here -->
     <script src="js/exercices.js"></script>
-</body>
+  </body>
 </html>

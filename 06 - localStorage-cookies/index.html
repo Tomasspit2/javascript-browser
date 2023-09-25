@@ -6,7 +6,32 @@
     <title>Local Storage & Cookies</title>
 </head>
 <body>
-    <!-- Your code goes here -->
+
+    <form action="#" id="form1">
+        <label for="text">Text</label>
+        <input type="text" name="text" id="text">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <button id="my-button">INPUT dialog</button>
+    <dialog id="my-dialog">
+        <div id="my-div"></div>
+    </dialog>
+
+    <button id="my-button2">COOKIES dialog2</button>
+    <dialog id="my-dialog2">
+        <div id="my-div2"></div>
+    </dialog>
+
+    <div>
+        <button id="deleteContent" onclick="deleteContent()">Delete content</button>
+
+        <br><br>
+
+        <button id="deleteCookie" onclick="deleteCookie()">Delete Cookie</button>
+    </div>
+
     <script src="js/exercices.js"></script>
 </body>
 </html>
